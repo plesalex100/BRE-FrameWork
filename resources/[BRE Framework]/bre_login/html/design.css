@@ -1,0 +1,73 @@
+
+#login {
+  background: #20A4F3;
+  text-align: center;
+  margin: auto;
+  margin-top: 10%;
+  width: 20%;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 20px;
+  padding: 10px;
+  transition: background-color .3s;
+}
+
+#error {
+  background-color: #FF7373;
+  border: 1px solid #FF0000;
+  width: 60%;
+  margin: auto;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  transition: .5s;
+}
+
+hr.afterTitle {
+  width: 80%;
+  border-radius: 5px;
+}
+
+input[type=text], input[type=password], select {
+  outline: none;
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 40%;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+input[value=Register] {
+  margin-left: 5px;
+  background-color: #FE5E41;
+}
+input[value=Register]:hover {
+  background-color: #FE7B63;
+}
+
+input[value=Login] {
+  margin-right: 5px;
+  background-color: #4CAF50;
+}
+input[value=Login]:hover {
+  background-color: #6CBD6F;
+}
+
+#title {
+  color: #fafafa;
+  font-size: 25px;
+  text-shadow: 0.5px 0.5px 0.5px black;
+  font-family: Impact, Charcoal, sans-serif;
+}

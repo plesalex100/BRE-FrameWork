@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<script src="Div.js" type="text/javascript"></script>
+	<script src="scripts.js" type="text/javascript"></script>
+	<script src="debounce.min.js" type="text/javascript"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+	<body class="home" onload="startTime()">
+		<div class="phone">
+			<div class="block-screen"><div class="time-circle"><div id="time"></div></div><div class="swipe"><h1 class="text">Swipe to unlock...</h1></div></div>
+			<div class="home-screen">
+				<ul id="list"></ul>
+			</div>
+		</div>
+		<div id="description"></div>
+		<script type="text/javascript">
+			function startTime() {
+			  var today = new Date();
+			  var h = today.getHours();
+			  var m = today.getMinutes();
+			  var s = today.getSeconds();
+			  m = checkTime(m);
+			  s = checkTime(s);
+			  document.getElementById('time').innerHTML= h + ":" + m;
+			  var t = setTimeout(startTime, 500);
+			}
+			function checkTime(i) {
+			  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+			  return i;
+			}
+		</script>
+	</body>
+</html>
