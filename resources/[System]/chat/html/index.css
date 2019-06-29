@@ -1,0 +1,141 @@
+.color-0{color: #ffffff;}
+.color-1{color: #ff4444;}
+.color-2{color: #99cc00;}
+.color-3{color: #ffbb33;}
+.color-4{color: #0099cc;}
+.color-5{color: #33b5e5;}
+.color-6{color: #aa66cc;}
+.color-7{color: #ffffff;}
+.color-8{color: #cc0000;}
+.color-9{animation: rainbow 3s linear infinite;}
+
+@keyframes rainbow {
+  from { color: #8f00ff; }
+  15% { color: #a34de2; }
+  30% { color: #ff7f00; }
+  45% { color: #00ff00; }
+  60% { color: #ffff00; }
+  75% { color: #ff7f00; }
+  90% { color: #ff0000; }
+  to { color: #8f00ff; }
+}
+
+@font-face {
+    font-family: 'Font2'; /*a name to be used later*/
+    src: url('font2.ttf'); /*URL to font*/
+}
+
+* {
+  font-family: 'Font2';
+  margin: 0;
+  padding: 0;
+}
+
+.no-grow {
+  flex-grow: 0;
+}
+
+em {
+  font-style: normal;
+}
+
+#app {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+.chat-window {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 43%;
+  height: 200px;
+
+  background-color: rgba(0, 0, 0, 0.0);
+  -webkit-animation-duration: 2s;
+}
+
+
+.chat-messages {
+  position: relative;
+  height: 95%;
+  font-size: 15px;
+  margin: 15px;
+  left: -18px;
+  text-shadow: 1.5px 1px #000000;
+  line-height: 90%;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
+.chat-input {
+  font-size: 1.2rem;
+  position: absolute;
+
+  top: 257px;
+  left: 15px;
+  width: 38%;
+
+  box-sizing: border-box;
+}
+
+.prefix {
+  position: absolute;
+  margin-top: 2px;
+  left: 4px;
+}
+
+textarea {
+  font-size: 1.1rem;
+  display: block;
+  box-sizing: border-box;
+  padding: 5px;
+  padding-left: 27px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.0);
+  width: 100%;
+  border-width: 0;
+  height: 34px;
+  overflow: hidden;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+.msg {
+  margin-bottom: 3px;
+}
+
+.multiline {
+  margin-left: 1.5rem;
+  text-indent: -1.5rem;
+  white-space: pre-line;
+}
+
+.suggestions {
+  list-style-type: none;
+  padding: 5px;
+  padding-left: 27px;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.0);
+  width: 100%;
+}
+
+.help {
+  color: #b0bbbd;
+}
+
+.disabled {
+  color: #b0bbbd;
+}
+
+.suggestion {
+  margin-bottom: 5px;
+}
